@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #0f172a 0%, #111827 40%, #0b1224 100%);
+      --panel: rgba(255, 255, 255, 0.05);
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #7dd3fc;
+      --accent-strong: #38bdf8;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Space Grotesk', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px 64px;
+    }
+    .frame {
+      width: min(1100px, 100%);
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+      padding: 28px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .title {
+      letter-spacing: 0.02em;
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      padding: 6px 10px;
+      border-radius: 10px;
+      background: var(--card);
+      color: var(--accent);
+      font-size: 12px;
+      border: 1px solid rgba(125, 211, 252, 0.25);
+    }
+    .lang-toggle {
+      display: inline-flex;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: var(--card);
+    }
+    .lang-toggle button {
+      border: none;
+      padding: 10px 14px;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-toggle button.active {
+      background: var(--accent-strong);
+      color: #0b1224;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 18px 18px 12px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #f3f4f6;
+    }
+    a {
+      color: var(--accent-strong);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    a:hover,
+    a:focus-visible {
+      color: #e0f2fe;
+      border-color: currentColor;
+      outline: none;
+    }
+    p, li {
+      margin: 6px 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 6px 0 0;
+    }
+    .timestamp {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 640px) {
+      .frame { padding: 22px; }
+      header { flex-direction: column; align-items: flex-start; }
+      .lang-toggle { width: 100%; }
+      .lang-toggle button { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame">
+    <header>
+      <div class="title">
+        Currency Converter
+        <span class="badge">Privacy Policy</span>
+      </div>
+      <div class="lang-toggle" aria-label="Select language">
+        <button id="btn-en" class="active" type="button">English</button>
+        <button id="btn-ja" type="button">日本語</button>
+      </div>
+    </header>
+
+    <!-- English -->
+    <article id="en" lang="en">
+      <section>
+        <h2>1. Overview</h2>
+        <p>Currency Converter is a simple, client-side tool for converting currencies. We respect your privacy and designed the app to avoid collecting personal data or persisting data on your device.</p>
+        <p class="pill">We do not sell data. We do not track you.</p>
+      </section>
+      <section>
+        <h2>2. Data We Collect</h2>
+        <p>We do not collect, store, or transmit any personal information, usage analytics, or device identifiers.</p>
+      </section>
+      <section>
+        <h2>3. How the App Works</h2>
+        <ul>
+          <li>Conversion calculations run locally on your device; results are not stored in persistent storage.</li>
+          <li>If the app uses exchange rates from a public API, your browser fetches rates directly; we do not receive or log those requests.</li>
+          <li>No cookies, trackers, or ads are embedded.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>4. Third-Party Services</h2>
+        <p>If future versions integrate an exchange-rate API (e.g., European Central Bank or similar), that provider’s privacy policy will apply to requests sent from your browser. We will select providers that do not require personal data.</p>
+      </section>
+      <section>
+        <h2>5. Data Security</h2>
+        <p>Because we do not collect data, we do not maintain user data stores. Standard web hosting security practices are followed for the static site.</p>
+      </section>
+      <section>
+        <h2>6. Children’s Privacy</h2>
+        <p>The app is not directed to children under 13, but it is safe to use because no personal data is collected.</p>
+      </section>
+      <section>
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this policy to reflect minor product or legal changes. The latest version will always be published on this page with an updated “Last Updated” date.</p>
+      </section>
+      <section>
+        <h2>8. Contact</h2>
+        <p>If you have questions, contact us at <a href="mailto:suzuki.coding.19@gmail.com">suzuki.coding.19@gmail.com</a>.</p>
+      </section>
+      <div class="timestamp">Last Updated: November 24, 2025</div>
+    </article>
+
+    <!-- Japanese -->
+    <article id="ja" lang="ja" style="display:none;">
+      <section>
+        <h2>1. 概要</h2>
+        <p>Currency Converter は通貨換算を行うシンプルなクライアントサイドのツールです。お客様のプライバシーを尊重し、個人データを収集したり端末に情報を保存しない設計にしています。</p>
+        <p class="pill">データの販売なし・トラッキングなし</p>
+      </section>
+      <section>
+        <h2>2. 収集するデータ</h2>
+        <p>個人情報、利用分析データ、デバイス識別子は収集・保存・送信しません。</p>
+      </section>
+      <section>
+        <h2>3. アプリの動作</h2>
+        <ul>
+          <li>換算計算は端末内でローカルに処理され、結果が永続的に保存されることはありません。</li>
+          <li>為替レートを公開 API から取得する場合、リクエストはお客様のブラウザから直接送信され、当方では受信・記録しません。</li>
+          <li>クッキー、トラッカー、広告は使用していません。</li>
+        </ul>
+      </section>
+      <section>
+        <h2>4. 第三者サービス</h2>
+        <p>将来、為替レート API（例：欧州中央銀行など）を統合する場合、リクエストにはその提供者のプライバシーポリシーが適用されます。個人データを必要としない提供者を選定します。</p>
+      </section>
+      <section>
+        <h2>5. データの安全性</h2>
+        <p>当方はデータを収集しないため、ユーザーデータの保管は行っていません。静的サイトの一般的なセキュリティ慣行を遵守しています。</p>
+      </section>
+      <section>
+        <h2>6. 児童のプライバシー</h2>
+        <p>本アプリは13歳未満の児童を対象としていませんが、個人データを扱わないため安全にご利用いただけます。</p>
+      </section>
+      <section>
+        <h2>7. 本ポリシーの変更</h2>
+        <p>プロダクトや法的要件の軽微な変更に合わせて更新する場合があります。最新の内容は本ページに掲載し、「最終更新日」を更新します。</p>
+      </section>
+      <section>
+        <h2>8. お問い合わせ</h2>
+        <p>ご不明点は <a href="mailto:suzuki.coding.19@gmail.com">suzuki.coding.19@gmail.com</a> までご連絡ください。</p>
+      </section>
+      <div class="timestamp">最終更新日: 2025年11月24日</div>
+    </article>
+  </main>
+
+  <script>
+    const en = document.getElementById('en');
+    const ja = document.getElementById('ja');
+    const btnEn = document.getElementById('btn-en');
+    const btnJa = document.getElementById('btn-ja');
+
+    const setLang = (lang) => {
+      const isEn = lang === 'en';
+      en.style.display = isEn ? 'block' : 'none';
+      ja.style.display = isEn ? 'none' : 'block';
+      btnEn.classList.toggle('active', isEn);
+      btnJa.classList.toggle('active', !isEn);
+      document.documentElement.lang = lang;
+    };
+
+    btnEn.addEventListener('click', () => setLang('en'));
+    btnJa.addEventListener('click', () => setLang('ja'));
+  </script>
+</body>
+</html>
